@@ -1,24 +1,40 @@
+
+
+
+var num1;
+var num2;
+var res;
+var results;
+
+document.addEventListener("DOMContentLoaded", function(){
+	num1 = document.getElementById("num1");
+	num2 = document.getElementById("num2");
+	res = document.getElementById("results");
+
+});
+
 function add(){
 	// console.log("Let's add");
 	// var math = ;
-	console.log(7 + 7);
+	results = +num1.value + +num2.value;
+	res.value = results;
 }
 
 function subtract(){
 	// console.log("Let's subtract")
 	// var math = ;
-	console.log(7 -7);
+	results = +num1.value - +num2.value;
+	res.value = results;
 }
 
 function multiply(){
 	// console.log("Let's multiply")
-	var math = 7 * 7;
-	console.log(math);
+	results = +num1.value * +num2.value;
+	res.value = results;
 }
 
 function divide(){
 	// console.log("Let's divide")
-	var math = 7 / 7;
-	console.log(math);
+	results = +num1.value / +num2.value;
+	res.value = results;
 }
-
